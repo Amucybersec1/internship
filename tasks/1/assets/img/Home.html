@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+         <title>Amukelani's Technical Documentation Webspage</title>
+
+         <style>
+             body { background-color: rgb(181, 192, 192);
+             background-size: 100%, 100%;
+             }
+        
+            #description{
+                text-align: right;
+            }
+
+            #Topics{
+                display: block;
+                max-width: 45px;
+                margin: auto;
+                float: left;
+                position: absolute;
+                top: 150px; 
+            }
+
+
+            h3{
+                text-align: right;
+                position: relative;top: -50px;
+            }
+
+            .button1{
+               padding: 12px 12px;
+               cursor: pointer;
+            }
+            .button2{
+                padding: 12px 12px;
+                cursor: pointer;
+            }
+            .button3{
+                padding: 12px 12px;
+                cursor: pointer; 
+            }
+         </style>    
+
+    </head>
+    <body>
+
+        <h1>Click on the topics to see the descriptions</h1>
+
+        <h2>TOPICS</h2>
+    
+        <h3>DESCRIPTION</h3>
+        <nav id="Topics">
+            <button class="button1" onclick="myDescription1()">HTML</button>
+            <button class="button2" onclick="myDescription2()">CSS</button>
+            <button class="button2" onclick="myDescription3()">JavaScript</button>                        
+        </nav>
+
+        <p id="description"></p>
+        
+        <script>
+        function myDescription1() {
+          document.getElementById("description").innerHTML = "HTML stands for Hyper Text Markup Language";
+        }
+
+        function myDescription2() {
+          document.getElementById("description").innerHTML = "CSS stands for Cascading Style Sheets";
+        }
+
+        function myDescription3() {
+          document.getElementById("description").innerHTML = "JavaScript is the Programming Language for the Web";
+        }
+        </script>
+
+    </body>
+    
+</html>
